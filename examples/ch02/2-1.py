@@ -7,7 +7,7 @@ from openai import OpenAI
 
 load_dotenv()
 
-dotenv_path = Path(" .env")  # .env na raiz
+dotenv_path = Path(" .env")
 load_dotenv(dotenv_path)
 
 openapi_api_key = os.getenv("OPENAI_API_KEY")
