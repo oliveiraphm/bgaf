@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from models32 import load_text_model, generate_text
+from models import load_text_model, generate_text
 
 app = FastAPI()
 

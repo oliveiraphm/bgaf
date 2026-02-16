@@ -10,9 +10,9 @@ def audio_array_to_buffer(audio_array: np.array, sample_rate: int) -> BytesIO:
 
 from fastapi import FastAPI, status
 from fastapi.responses import StreamingResponse
-from models34 import load_audio_model, generate_audio
-from schemas34 import VoicePresets
-from utils35 import audio_array_to_buffer
+from models import load_audio_model, generate_audio
+from examples.ch03.schemas import VoicePresets
+from examples.ch03.utils import audio_array_to_buffer
 
 app = FastAPI()
 

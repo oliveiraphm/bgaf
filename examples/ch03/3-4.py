@@ -5,7 +5,7 @@ VoicePresets = Literal["v2/en_speaker_1", "v2/en_speaker_9"]
 import torch
 import numpy as np
 from transformers import AutoProcessor, AutoModel, BarkProcessor, BarkModel
-from schemas34 import VoicePresets
+from examples.ch03.schemas import VoicePresets
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
